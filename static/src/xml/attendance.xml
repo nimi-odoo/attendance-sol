@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template id="attendance_display" xml:space="preserve">
+    <t t-name="HrAttendanceKioskConfirmInherit" t-extend="HrAttendanceKioskConfirm">
+        <t t-jquery='.alert .alert-danger .mx-3' t-operation='replace'>
+            <p>Your Company Name</p>
+        </t>
+    </t>
+</template>
