@@ -23,9 +23,9 @@
     ],
     "assets": {
         "web.assets_backend": {
-            "attendance/static/src/js/kioskmode.js",
-            "attendance/static/src/js/kioskconfirm.js",
-            "attendance/static/src/xml/attendance.xml"
+            "attendance-sol/static/src/js/kioskmode.js",
+            "attendance-sol/static/src/js/kioskconfirm.js",
+            "attendance-sol/static/src/xml/attendance.xml"
         }
     }
     
