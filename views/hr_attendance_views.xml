@@ -10,18 +10,6 @@
         <field name="target">current</field>
     </record>
 
-
-<!-- Window action to go to sale order line kanban view -->
-    <record id="hr_employee_attendance_action_kanban_inherit" model="ir.actions.act_window">
-        <field name="name">Sale Order Lines</field>
-        <field name="res_model">sale.order.line</field>
-        <field name="view_mode">kanban</field>
-        <field name="view_id" ref="attendance.sale_order_line_view_kanban_inherit"/>
-        <!-- <field name="view_id" ref="sale.sale_order_line_view_kanban"/> -->
-        <!-- <field name="target">fullscreen</field> -->
-    </record>
-
-
 <!-- The sale order line kanban view, inherited to use the action when clicking an item -->
     <record id="sale_order_line_view_kanban_inherit" model="ir.ui.view">
         <field name="name">sale.order.line.kanban</field>
@@ -43,12 +31,18 @@
         </field>
     </record>
 
-<!-- don't remember what this is -->
+<!-- Window action to go to sale order line kanban view -->
+    <record id="hr_employee_attendance_action_kanban_inherit" model="ir.actions.act_window">
+        <field name="name">Sale Order Lines</field>
+        <field name="res_model">sale.order.line</field>
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="attendance.sale_order_line_view_kanban_inherit"/>
+    </record>
+
+<!-- don't remember what this is :s -->
     <record id="hr_attendance_action_kiosk_mode_inherit" model="ir.actions.client">
         <field name="name">Sale Order Line Attendances</field>
         <field name="tag">hr_attendance_kiosk_mode</field>
         <field name="target">current</field>
     </record>
-
 </odoo>
-
