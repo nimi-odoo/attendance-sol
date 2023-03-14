@@ -11,7 +11,7 @@ odoo.define('attendance.kioskconfirm', function (require) {
     kioskConfirm.include({
         init: function (parent, action) {
             this._super.apply(this, arguments);
-            this.next_action = 'attendance.hr_attendance_action_kiosk_mode_inherit';
+            this.next_action = 'attendance-sol.hr_attendance_action_kiosk_mode_inherit';
             this.sale_order_line_id = action.sale_order_line_id;
             this.sol_name = action.sol_name;
             this.sol_state = action.sol_state;
