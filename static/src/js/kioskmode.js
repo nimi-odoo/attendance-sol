@@ -8,7 +8,7 @@ odoo.define('attendance.kioskmode', function (require){
     kiosk.include({
         events: {
             "click .o_hr_attendance_button_employees": function() {
-                this.do_action('attendance.hr_employee_attendance_action_kanban_inherit', {
+                this.do_action('attendance-sol.hr_employee_attendance_action_kanban_inherit', {
                     additional_context: {'no_group_by': true},
                 });
             },
